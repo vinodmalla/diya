@@ -23,7 +23,7 @@ export default function Contact() {
       <div className="grid place-items-center flex-col justify-center">
       <h1 className='m-8 font-bold text-justify text-2xl'>Contact Us</h1>
         <p className="m-4 p-4 text-gray-700 flex items-center ">
-          <MailCheckIcon className="mr-4" />: diyahelpinghands@gmail.com
+          <MailCheckIcon className="mr-4" />: diya@diyahelpinghandscharitabletrust.com  
         </p>
         <p className="m-4 p-4 text-gray-700 text-sm flex items-center">
           <LocateFixedIcon size={30} className="mr-2" />:HIG-11 BLOCK, HIG CHITRAPURI HILLS, Chitrapuri Colony, Hyderabad, Telangana 500089
