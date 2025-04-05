@@ -3,10 +3,10 @@ import img1 from "../Image[1].jpg";
 import img2 from "../Image[2].jpg";
 import img3 from "../Image[3].jpg";
 import img4 from "../Image[4].jpg";
-import img5 from "../Image[5].jpg";
+import img5 from "../oldagehome.jpg";
 
 export default function About() {
-  const images = [img1, img2, img3];
+  const images = [img5, img2, img3];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function About() {
       <img
         key={index}
         src={image}
-        className={`absolute inset-0 w-full h-auto object-contain transition-opacity duration-1000 ${
+        className={`absolute inset-0 w-full h-auto rounded-lg object-contain transition-opacity duration-1000 ${
           index === currentImage ? 'opacity-100' : 'opacity-0'
         }`}
         alt={`Slide ${index + 1}`}
@@ -47,7 +47,7 @@ export default function About() {
       {/* Our Mission Section */}
       <h1 className="text-black text-2xl md:text-4xl font-bold flex justify-center m-4">Our Mission</h1>
       <div className="flex justify-center">
-        <img className="p-4 md:p-8 w-full max-w-[300px] md:max-w-[500px]" src={img4} alt="Mission Logo" />
+        <img className="p-4 md:p-8 w-full max-w-[300px] md:max-w-[500px] rounded-lg" src={img4} alt="Mission Logo" />
       </div>
 
       <div className="p-4 mx-auto max-w-[90%] md:max-w-[75%] lg:max-w-[60%]">
@@ -61,7 +61,7 @@ export default function About() {
       {/* Our Vision Section */}
       <h1 className="text-black text-2xl md:text-4xl font-bold flex justify-center m-4">Our Vision</h1>
       <div className="flex justify-center">
-        <img className="p-4 md:p-8 w-full max-w-[300px] md:max-w-[500px]" src={img5} alt="Vision Logo" />
+        <img className="p-4 rounded-xl md:p-8 w-full max-w-[300px] md:max-w-[500px] " src={img1} alt="Vision Logo" />
       </div>
 
       <div className="p-4 mx-auto max-w-[90%] md:max-w-[75%] lg:max-w-[60%]">

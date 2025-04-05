@@ -22,7 +22,7 @@ export default function Header() {
         </button>
       </div>
       <div className={`absolute md:static top-0 left-0 w-full md:w-auto text-xs md:text-xl bg-white md:bg-transparent md:flex transition-all duration-300 shadow-md md:shadow-none ${isOpen ? 'block' : 'hidden'}`}>
-        <ul className='flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 text-gray-500 text-lg font-semibold'>
+        <ul className='flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 text-gray-600 text-lg font-semibold'>
           <li className='p-2 hover:underline'><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
           <li className='p-2 hover:underline'><Link to="/services" onClick={() => setIsOpen(false)}>Our Services</Link></li>
           <li className='p-2 hover:underline'><Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link></li>

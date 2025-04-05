@@ -4,14 +4,15 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";  
 import FacebookIcon from "@mui/icons-material/Facebook";    
 import { MailCheckIcon } from 'lucide-react';
-import { LocateIcon } from 'lucide-react';
 import { ContactIcon } from 'lucide-react';
+import { LocateFixedIcon } from 'lucide-react';
+
 
 export default function Contact() {
   return (
     <div className="">
       <div className="grid place-items-center justify-center">
-        <img className="m-4 w-96 md:w-auto" src={logo} alt="Diya Helping Hands Logo" />
+        <img className="m-4 w-96 md:w-auto rounded-lg" src={logo} alt="Diya Helping Hands Logo" />
       </div>
 
       <div className='text-justify  p-4 mx-auto m-4 py-4 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
@@ -24,11 +25,11 @@ export default function Contact() {
         <p className="m-4 p-4 text-gray-700 flex items-center ">
           <MailCheckIcon className="mr-4" />: diyahelpinghands@gmail.com
         </p>
-        <p className="m-4 p-4 text-gray-700 flex items-center">
-          <LocateIcon className="mr-2" />:HIG-11 BLOCK, HIG CHITRAPURI HILLS, Chitrapuri Colony, Hyderabad, Telangana 500089
+        <p className="m-4 p-4 text-gray-700 text-sm flex items-center">
+          <LocateFixedIcon size={30} className="mr-2" />:HIG-11 BLOCK, HIG CHITRAPURI HILLS, Chitrapuri Colony, Hyderabad, Telangana 500089
         </p>
         <p className="m-4 p-4 text-gray-700 flex items-center">
-          <ContactIcon className="mr-2" />: +91 9392932998
+          <ContactIcon  className="mr-2 " />: +91 9392932998
         </p>
 
         <h1 className='m-8 font-bold text-justify text-2xl'>Follow Us</h1>

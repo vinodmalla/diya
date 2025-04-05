@@ -1,23 +1,62 @@
-import React from 'react'
-import Image  from '../IMG_7206.jpg'
+import React from 'react';
+import Image1 from '../IMG_7206.jpg';
+import Image2 from '../Education.jpg';
+import Image3 from '../oldagehome.jpg';
+import { Link } from 'react-router-dom';
 
-export default function () {
+export default function Missions() {
   return (
-    <div>
-      <div className='p-4 flex justify-center'>
-        <h1 className='font-bold text-4xl m-4'>Mission Tatra: Bringing Water, Restoring Hope</h1>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8">
+      {/* Mission Tatra */}
+      <div className="bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+        <img src={Image1} alt="Mission Tatra" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">Mission Tatra: A Hundred Years, One Well, and Now a New Beginning</h2>
+          <p className="text-gray-600 mb-4">
+            In a village where a single well served generations, water has now become a distant dream. Mission Tatra is about reviving that dream — restoring clean water, dignity, and hope to a community left behind.....
+          </p>
+          <Link
+            to="/tatra"
+            className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
-      <div className='flex justify-center'>
-        <img src={Image} className='w-72 md:w-1/2 h-auto rounded-lg' alt="Mission Tatra" />
+
+      {/* Education */}
+      <div className="bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+        <img src={Image2} alt="Education Mission" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">From Dreams to Reality: Chamundeswari’s Journey of Hope</h2>
+          <p className="text-gray-600 mb-4">
+            A young mind fueled by ambition, rising above circumstances with the power of education. A journey where hope becomes a path forward.....
+          </p>
+          <Link
+            to="/education"
+            className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
-      <div className='flex justify-center p-4 mx-auto m-4 py-4 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
-        <p className='text-justify'>
-        At Diya Helping Hands Charitable Trust, we are committed to addressing critical community needs through impactful initiatives. One such effort is Mission Tatra, focused on resolving the severe water crisis in Tatra village.Established over 100 years ago, Tatra is home to approximately 400 residents. For a century, the village depended on a single well, dug by their ancestors, to meet their drinking and daily water needs. However, over the past 30 years, this well has dried up completely, leaving the community without a reliable water source. Today, villagers must travel 6 kilometers to a neighboring village’s water plant to fetch drinking water—a task made nearly impossible for families without able-bodied men, leaving women, elderly individuals, and children to bear the burden of this daily struggleWhile the government has installed a water tank in Tatra, the supply remains salty and unsuitable for consumption. At Diya, we are stepping in to enhance this initiative, ensuring access to clean, potable water for all. Our primary goals under Mission Tatra are:
-To resolve the drinking water crisis that has plagued Tatra for three decades.
-To establish a sustainable and effective drainage system for the village.
-We don’t just initiate change—we build on existing efforts, collaborating with government programs to create lasting solutions. Through Mission Tatra, we aim to restore dignity, health, and hope to the people of Tatra by securing their most basic need: water.
-        </p>
+
+      {/* Old Age Home */}
+      <div className="bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+        <img src={Image3} alt="Old Age Home" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">Where Love Lives: A Home for Our Forgotten Heroes</h2>
+          <p className="text-gray-600 mb-4">
+            A quiet space filled with warmth, memories, and gentle smiles. Where aging souls rediscover comfort, dignity, and belonging.....
+          </p>
+          <Link
+            to="/oldagehome"
+            className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
     </div>
-  )
+  );
 }

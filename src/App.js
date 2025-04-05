@@ -7,6 +7,9 @@ import Donate from './Components/Donate'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Home from "./Components/Home"
+import Tatra from './Components/Tatra'
+import Education from './Components/Education'
+import Oldagehome from './Components/Oldagehome'
 
 export default function App() {
   
@@ -43,6 +46,18 @@ export const approuter = createBrowserRouter([
       {
         path: "donate",
         element: <Donate />,
+      },
+      {
+        path: "tatra",
+        element: <Tatra />,
+      },
+      {
+        path: "education",
+        element: <Education />,
+      },
+      {
+        path: "oldagehome",
+        element: <Oldagehome />,
       },
     ],
   },
